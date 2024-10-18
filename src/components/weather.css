@@ -1,0 +1,106 @@
+.weather {
+  position: relative;
+  place-self: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 20;
+  width: 100%;
+}
+
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+}
+
+.search-bar img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+}
+
+.weather-icon {
+  width: 150px;
+  margin: 30px 0;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.location {
+  color: #fff;
+  font-size: 40px;
+}
+
+.weather-data {
+  width: 100%;
+  margin-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+
+.weather-data .col img {
+  width: 26px;
+  margin-top: 10px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 90px; /* Sesuaikan nilai ini jika perlu */
+  left: 40px; /* Sesuaikan dengan padding .weather */
+  right: 40px; /* Sesuaikan dengan padding .weather */
+  background-color: #ebfffc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 30;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions li {
+  padding: 10px 25px;
+  cursor: pointer;
+  color: #626262;
+  transition: background-color 0.3s ease;
+}
+.suggestions li:hover {
+  background-color: #d0f0ea;
+  color: #2f4680;
+}
